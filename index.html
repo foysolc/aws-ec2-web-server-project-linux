@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Linux Web Server: A Cloud Engineering Demonstration</title>
+    <!-- Google Fonts: Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset & Box Sizing */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6; /* Light, subtle background */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            padding: 20px; /* Padding for smaller screens */
+        }
+
+        /* Main Container */
+        .container {
+            background-color: #ffffff; /* White background for content */
+            border-radius: 12px; /* Rounded corners */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            padding: 40px;
+            max-width: 800px; /* Max width for readability */
+            width: 100%; /* Full width on smaller screens */
+            text-align: center;
+            animation: fadeIn 1s ease-out; /* Simple fade-in animation */
+        }
+
+        /* Header Styling */
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #2c3e50; /* Dark blue-grey for heading */
+            font-size: 2.5em; /* Larger heading */
+            margin-bottom: 15px;
+            line-height: 1.2;
+            font-weight: 700; /* Bold */
+        }
+
+        /* Main Content Paragraphs */
+        main p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin: 25px auto; /* Center the list */
+            max-width: 600px; /* Limit list width */
+            text-align: left; /* Align list items left */
+        }
+
+        ul li {
+            background-color: #e9f7ef; /* Light green background for list items */
+            border-left: 5px solid #28a745; /* Green left border */
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            border-radius: 8px; /* Rounded corners for list items */
+            font-size: 1em;
+            color: #218838; /* Darker green text */
+            font-weight: 600; /* Semi-bold */
+        }
+
+        /* Strong/Highlight Text */
+        strong {
+            color: #007bff; /* Bright blue for strong text */
+            font-weight: 700;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee; /* Light separator line */
+        }
+
+        footer p {
+            font-size: 0.95em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        /* GitHub Link Button */
+        .github-link {
+            display: inline-block;
+            background-color: #007bff; /* Blue button */
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px; /* Rounded button */
+            text-decoration: none; /* No underline */
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+            margin-top: 15px;
+        }
+
+        .github-link:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+
+        /* Signature and Date */
+        .signature {
+            font-style: italic;
+            margin-top: 25px;
+            color: #666;
+        }
+
+        .date {
+            font-size: 0.85em;
+            color: #888;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            main p {
+                font-size: 1em;
+            }
+            ul li {
+                font-size: 0.95em;
+            }
+            .github-link {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+
+        /* Keyframe for fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello from Your Secure AWS Web Server!</h1>
+        </header>
+        <main>
+            <p>This web server is successfully deployed on an AWS EC2 instance.</p>
+            <p>It stands as a demonstration of core <strong>Linux system administration</strong> and <strong>server hardening</strong> skills, applying principles from my <strong>LPI Linux Essentials</strong> knowledge.</p>
+            <p>Key aspects demonstrated:</p>
+            <ul>
+                <li>Basic web server deployment & configuration</li>
+                <li>Secure user and permissions management</li>
+                <li>Firewall setup and network access control</li>
+                <li>Automation of system tasks using Bash scripting</li>
+            </ul>
+        </main>
+        <footer>
+            <p>See the full project details, code, and hardening steps on GitHub:</p>
+            <a href="https://github.com/foysolc/aws-ec2-web-server-project-linux" target="_blank" class="github-link">View Project on GitHub</a>
+            <p class="signature">- [Foysol Chowdhury]</p>
+            <p class="date">Deployed: July 4, 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
