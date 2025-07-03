@@ -2,9 +2,9 @@
 
 ## 📘 Project Overview
 
-This project demonstrates the deployment of a basic, secure **Nginx web server** on an **Amazon Web Services (AWS) EC2** instance. It showcases fundamental Linux system administration, server hardening, and basic monitoring techniques, directly applying concepts learned from the **LPI Linux Essentials** certification.
+This project demonstrates the deployment of a basic, secure **Nginx web server** on an **Amazon Web Services (AWS) EC2** instance. It highlights fundamental Linux system administration, server hardening, and basic monitoring techniques, directly applying concepts learned from the **LPI Linux Essentials** certification.
 
-The EC2 instance was manually provisioned through the **AWS Management Console**, with a focus on configuring and managing the Linux operating system and its services.
+The EC2 instance was manually provisioned through the **AWS Management Console**, with an emphasis on configuring and managing the Linux operating system and its associated services.
 
 ---
 
@@ -18,7 +18,7 @@ To successfully deploy a static web page on a cloud-based Linux server, secure i
 
 - **Cloud Platform:** AWS (Amazon Web Services)  
 - **Compute:** AWS EC2 (Elastic Compute Cloud)  
-- **Networking/Security:** AWS Security Groups (configured via console)  
+- **Networking/Security:** AWS Security Groups (configured via the console)  
 - **Operating System:** Ubuntu Server 24.04 LTS  
 - **Web Server:** Nginx  
 - **Scripting:** Bash Shell Scripting  
@@ -55,38 +55,38 @@ To successfully deploy a static web page on a cloud-based Linux server, secure i
 ## 🖥️ Project Setup & Access
 
 - **AWS EC2 Instance:** Ubuntu 24.04 LTS EC2 instance manually launched and configured via the AWS Console  
-- **SSH Access:** Secure shell access using a private key (`.pem` file)  
-- **Web Access:** Nginx serves the `index.html` file on standard HTTP (port 80)  
+- **SSH Access:** Secure Shell (SSH) access using a private key (`.pem` file)  
+- **Web Access:** Nginx is configured to serve the `index.html` file over standard HTTP (port 80)  
 
-🔗 **To access your web server**, open a browser and go to:  
+🔗 **To access your web server**, open a web browser and navigate to: http://<Your_EC2_Public_IPv4_Address>  
 
 ---
 
 ## 📊 Monitoring
 
-A `monitor_nginx.sh` script is included to provide basic health checks for the Nginx service. It can be run manually or scheduled via `cron` to continuously monitor:
+A `monitor_nginx.sh` script is included to perform basic health checks on the Nginx service. This script can be executed manually or scheduled via `cron` to continuously monitor:
 
 - Nginx service status  
-- Listening on port 80  
+- Listening port 80  
 - Recent access log entries  
 
 ---
 
-## 🧹 Cleanup
+## 🧹 Clean-Up
 
-To avoid unnecessary AWS charges, terminate the EC2 instance when you're done:
+To prevent incurring unnecessary AWS charges, ensure you terminate the EC2 instance when finished:
 
 1. Go to the **AWS Management Console** > **EC2 Dashboard**
 2. Select your instance (e.g., `MyWebServerProject`)
-3. Click on **Instance State** dropdown
-4. Choose **Terminate Instance** and confirm
+3. Click on the **Instance State** dropdown
+4. Select **Terminate Instance** and confirm
 
 ---
 
 ## 👤 Author
 
-**[Foysol Chowdhury]**  
-[LinkedIn](www.linkedin.com/in/foysol-c-966225137)]  
-[GitHub](https://github.com/foysolc)]
+**Foysol Chowdhury**  
+[LinkedIn](https://www.linkedin.com/in/foysol-c-966225137)  
+[GitHub](https://github.com/foysolc)
 
-**📅 Date Deployed:** July 4, 2025
+**📅 Date Deployed:** 4 July 2025
